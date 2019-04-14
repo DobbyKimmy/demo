@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #666;
+        }
+        .yinyang{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#000000 51%,#000000 100%);
+            position: relative;
+            margin: 300px auto;
+        }
+        .circle-black{
+            width: 100px;
+            height: 100px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 25%;
+        }
+        .circle-white{
+            width: 100px;
+            height: 100px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+        }
+        .circle-black>.circle-small{
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+        .circle-white>.circle-small{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            border-radius: 50%;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="yinyang">
+        <div class="circle-black">
+            <div class="circle-small"></div>
+        </div>
+        <div class="circle-white">
+            <div class="circle-small"></div>
+        </div>
+    </div>
+</body>
+</html>
